@@ -46,6 +46,7 @@ header::after {
 
 .about p {
     margin-bottom: 10px;
+    font-size: 1.2rem;
 }
 
 .links {
@@ -54,4 +55,50 @@ header::after {
 
 .about .links {
     text-align: center;
+}
+
+main {
+    padding: 20px 40px;
+}
+
+main > h1 {
+    margin-bottom: 8px;
+}
+
+.project {
+    border: 1px solid grey;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px 0;
+}
+
+.project img {
+    width: 100%;
+}
+
+.project-title {
+    font-size: 1.4rem;
+}
+
+.project-links {
+    font-size: 1.4rem;
+}
+
+.project-links :first-child {
+    margin-right: 4px;
+}
+
+.project-body {
+    padding: 10px;
+}
+
+.project-body > p {
+    color: grey;
+}
+
+.tags {
+    margin-top: 6px;
 }
