@@ -1,0 +1,42 @@
+@import url(./resets.css);
+
+header {
+    padding: 30px 40px;
+}
+
+.profile-img {
+    background-image: url(./životopis-fotka.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    margin-bottom: 20px;
+    position: relative;
+    color: #fff;
+}
+
+.profile-img > h3 {
+    position: absolute;
+    left: 6px;
+    bottom: 0;
+    width: 100%;
+    font-size: 2.4rem;
+    text-shadow: 1px 1px 6px #000;
+}
+
+.about h2 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.about p {
+    margin-bottom: 10px;
+}
+
+.links {
+    font-size: 1.5rem;
+}
+
+.about .links {
+    text-align: center;
+}
