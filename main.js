@@ -1,4 +1,12 @@
 import { github, facebook, linkedin, externalLink } from "./icons.js";
+import createProject from "./project.js";
+import projects from "./projects.js";
+
+const projectsDOM = document.querySelector(".projects");
+
+projects.forEach((project) =>
+    projectsDOM.appendChild(createProject(project))
+);
 
 const githubsDOM = document.querySelectorAll(".github");
 const facebooksDOM = document.querySelectorAll(".facebook");
