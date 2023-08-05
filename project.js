@@ -9,35 +9,35 @@ export default function createProject({
     const projectDOM = document.createElement("div");
     projectDOM.classList.add("project");
     const projectInnerHtml = `
-  <img
-      src="${img}"
-      alt="project name"
-  />
-  <div class="project-header">
-      <span class="project-title">${title}</span>
-      <div class="project-links">
-          <a
-              href="${repository}"
-              class="github"
-              target="_blank"
-          >
-          </a>
-
-          <a
-              href="${live}"
-              class="external-link"
-              target="_blank"
-          >
-          </a>
+  <a href="${live}" target="_blank">
+      <img
+          src="${img}"
+          alt="project name"
+      />
+      <div class="project-header">
+          <span class="project-title">${title}</span>
+          <div class="project-links">
+              <a
+                  href="${repository}"
+                  class="github"
+                  target="_blank"
+              >
+              </a>
+              <a
+                  href="${live}"
+                  class="external-link"
+                  target="_blank"
+              >
+              </a>
+          </div>
       </div>
-  </div>
-
-  <div class="project-body">
-      <p>
-          ${description}
-      </p>
-      <div class="tags"></div>
-  </div>
+      <div class="project-body">
+          <p>
+              ${description}
+          </p>
+          <div class="tags"></div>
+      </div>
+  </a>
 `;
     projectDOM.innerHTML = projectInnerHtml;
 

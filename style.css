@@ -18,14 +18,17 @@ header {
 }
 
 .profile-img {
-    background-image: url(./životopis-fotka.jpg);
+    background-image: url(./životopis-fotka-originál.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    height: 200px;
+    background-position: center 30%;
+    height: 300px;
+    width: 200px;
+    margin: 0 auto;
     margin-bottom: 20px;
     position: relative;
     color: #fff;
+    max-width: 300px;
 }
 
 .profile-img > h3 {
@@ -39,6 +42,7 @@ header {
 
 .about {
     position: relative;
+    max-width: 800px;
 }
 
 .about h2 {
@@ -69,10 +73,19 @@ main > h1 {
 
 .projects {
     margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    justify-content: center;
+    gap: 30px;
 }
 
 .project {
     border: 1px solid grey;
+    transition: scale 300ms ease-in-out;
+}
+
+.project:hover {
+    scale: 1.02;
 }
 
 .project:not(:last-child) {
@@ -128,16 +141,26 @@ footer {
     font-size: 1.2rem;
     background-color: #0891b2;
     color: #fff;
-    padding: 20px 40px;
+    padding-top: 20px;
+}
+
+.contact,
+.contact-container {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
+}
+
+.contact-container {
+    padding: 0 40px;
 }
 
 .contact {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+    gap: 4px;
+}
+
+.contact-text {
+    max-width: 40ch;
 }
 
 .contact-title,
@@ -147,4 +170,76 @@ footer .links {
 
 .contact-title {
     font-size: 2rem;
+}
+
+.contact-img {
+    width: 100%;
+    max-width: 400px;
+}
+
+@media (min-width: 450px) {
+    header {
+        padding-top: 100px;
+    }
+    .profile-img {
+        float: left;
+        margin: -60px 20px 0px -10px;
+        z-index: 1;
+    }
+
+    .profile-img > h3 {
+        top: 10px;
+        bottom: initial;
+        left: 80%;
+        width: 120%;
+    }
+
+    .about {
+        box-shadow: 1px 1px 6px grey;
+        padding: 50px 20px 20px;
+        background-color: #fff;
+    }
+
+    .about .links {
+        text-align: right;
+    }
+}
+
+@media (min-width: 600px) {
+    footer {
+        display: flex;
+        padding: 20px 40px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-img {
+        width: 0;
+        flex: 1;
+        flex-basis: 400px;
+    }
+
+    .contact-title {
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 650px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .profile-img {
+        float: none;
+        margin: 0;
+        flex-grow: 1;
+        flex-shrink: 0;
+    }
+    .profile-img > h3 {
+        bottom: 0;
+        top: initial;
+        left: 10px;
+        width: 100%;
+    }
 }
