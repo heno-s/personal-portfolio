@@ -4,17 +4,15 @@ header {
     padding: 30px 40px;
     background-color: #0891b2;
     position: relative;
-    z-index: -2;
+    overflow: visible;
 }
 
-header::after {
-    content: "";
+.clipped-box {
     position: absolute;
     height: 75%;
     width: 100%;
     bottom: -10px;
     left: 0;
-    z-index: -1;
     background-color: #fff;
     clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
 }
@@ -39,6 +37,10 @@ header::after {
     text-shadow: 1px 1px 6px #000;
 }
 
+.about {
+    position: relative;
+}
+
 .about h2 {
     margin-bottom: 10px;
     text-align: center;
@@ -50,7 +52,7 @@ header::after {
 }
 
 .links {
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .about .links {
@@ -123,6 +125,7 @@ main > h1 {
 }
 
 footer {
+    font-size: 1.2rem;
     background-color: #0891b2;
     color: #fff;
     padding: 20px 40px;
@@ -131,7 +134,17 @@ footer {
     gap: 10px;
 }
 
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
 .contact-title,
 footer .links {
     align-self: center;
+}
+
+.contact-title {
+    font-size: 2rem;
 }
