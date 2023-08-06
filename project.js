@@ -9,11 +9,12 @@ export default function createProject({
     const projectDOM = document.createElement("div");
     projectDOM.classList.add("project");
     const projectInnerHtml = `
-  <a href="${live}" target="_blank">
+  <a href="${live}" target="_blank" title="${live}">
       <img
           src="${img}"
           alt="project name"
       />
+      </a>
       <div class="project-header">
           <span class="project-title">${title}</span>
           <div class="project-links">
@@ -31,13 +32,13 @@ export default function createProject({
               </a>
           </div>
       </div>
-      <div class="project-body">
-          <p>
+      
+          <p class="project-description">
               ${description}
           </p>
+          
           <div class="tags"></div>
-      </div>
-      </a>
+      
 `;
     projectDOM.innerHTML = projectInnerHtml;
 

@@ -91,6 +91,9 @@ main > h1 {
 .project {
     border: 1px solid grey;
     transition: scale 300ms ease-in-out;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
 }
 
 .project:hover {
@@ -123,12 +126,9 @@ main > h1 {
     margin-right: 4px;
 }
 
-.project-body {
-    padding: 10px;
-}
-
-.project-body > p {
+.project-description {
     color: grey;
+    padding: 10px;
 }
 
 .tags {
@@ -137,6 +137,8 @@ main > h1 {
     column-gap: 10px;
     row-gap: 5px;
     flex-wrap: wrap;
+    padding: 0 10px;
+    margin-top: auto;
 }
 
 .tag {
