@@ -65,6 +65,10 @@ header {
 
 main {
     padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
 }
 
 main > h1 {
@@ -77,6 +81,11 @@ main > h1 {
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     justify-content: center;
     gap: 30px;
+}
+
+.projects-text {
+    max-width: 80ch;
+    margin-bottom: 12px;
 }
 
 .project {
