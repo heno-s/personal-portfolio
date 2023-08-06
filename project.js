@@ -37,7 +37,7 @@ export default function createProject({
           </p>
           <div class="tags"></div>
       </div>
-  </a>
+      </a>
 `;
     projectDOM.innerHTML = projectInnerHtml;
 

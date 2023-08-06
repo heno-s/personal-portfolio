@@ -159,10 +159,6 @@ footer {
     gap: 4px;
 }
 
-.contact-text {
-    max-width: 40ch;
-}
-
 .contact-title,
 footer .links {
     align-self: center;
