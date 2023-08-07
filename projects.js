@@ -63,4 +63,24 @@ export default [
         live: "https://heno-s.github.io/revisioned-library/",
         tags: ["ReactJs"],
     },
+    {
+        title: "Etch a Sketch",
+        description:
+            "V aplikácii je hlavným cieľom vymaľovať políčka podľa vlastných predstáv a vytvoriť tak nejaký obraz. v aplikácii sa dajú meniť farby, gumovať alebo zmeniť množstvo štvorčekov na ploche.",
+        img: "./projects-images/etch-a-sketch.png",
+        repository: "https://github.com/heno-s/odin-etch-a-sketch",
+        live: "https://heno-s.github.io/odin-etch-a-sketch/",
+        tags: ["VanillaJs"],
+    },
+
+    {
+        title: "Rock, Paper, Scissors",
+        description:
+            "Je imitácia hry kameň papier nožnice, kde používateľ hrá proti počítaču. Hrá sa na 5 kôl. Kto prvý získa 5 výherných bodov stáva sa celkovým víťazom hry.",
+        img: "./projects-images/rps.png",
+        repository:
+            "https://github.com/heno-s/odin-rock-paper-scissors",
+        live: "https://heno-s.github.io/odin-rock-paper-scissors/",
+        tags: ["VanillaJs"],
+    },
 ];
