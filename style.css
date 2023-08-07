@@ -100,10 +100,6 @@ main > h1 {
     scale: 1.02;
 }
 
-.project:not(:last-child) {
-    margin-bottom: 16px;
-}
-
 .project-header {
     display: flex;
     justify-content: space-between;
