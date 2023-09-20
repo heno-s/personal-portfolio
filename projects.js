@@ -9,6 +9,15 @@ export default [
         tags: ["Express", "NodeJs", "MongoDB"],
     },
     {
+        title: "Local Library",
+        description:
+            "Aplikácia, v ktorej používatelia môžu prezerať, vytvárať, mazať a upravovať údaje z databázy v podobe kníh, autorov, žánrov.",
+        img: "./projects-images/local-library.png",
+        repository: "https://github.com/heno-s/local-library",
+        live: "https://local-library-rnd4.onrender.com/catalog",
+        tags: ["Express", "NodeJs", "MongoDB"],
+    },
+    {
         title: "Memory Game",
         description:
             "Aplikácia je zameraná na precvičovanie pamäti. Obsahuje kartičky, na ktorých sú obrázky. Na každý obrázok je v kole možné kliknúť iba raz, ak sa klikne druhý krát kolo sa reštartuje.",
