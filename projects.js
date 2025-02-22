@@ -9,15 +9,6 @@ export default [
         tags: ["Express", "NodeJs", "MongoDB"],
     },
     {
-        title: "Local Library",
-        description:
-            "Aplikácia, v ktorej používatelia môžu prezerať, vytvárať, mazať a upravovať údaje z databázy v podobe kníh, autorov, žánrov.",
-        img: "./projects-images/local-library.png",
-        repository: "https://github.com/heno-s/local-library",
-        live: "https://local-library-rnd4.onrender.com/catalog",
-        tags: ["Express", "NodeJs", "MongoDB"],
-    },
-    {
         title: "Memory Game",
         description:
             "Aplikácia je zameraná na precvičovanie pamäti. Obsahuje kartičky, na ktorých sú obrázky. Na každý obrázok je v kole možné kliknúť iba raz, ak sa klikne druhý krát kolo sa reštartuje.",
@@ -37,15 +28,6 @@ export default [
         tags: ["ReactJs", "Vite"],
     },
     {
-        title: "Weather App",
-        description:
-            "Slúži na poskytovanie údajov o počasí. Používateľ zadá názov miesta (mesta, krajiny) do hľadáčika a následne sa mu zobrazia údaje o počasí v danom mieste. Môže prepínať medzi stupňami celzia a fahrenheit.",
-        img: "./projects-images/weather.png",
-        repository: "https://github.com/heno-s/odin-weather-app",
-        live: "https://heno-s.github.io/odin-weather-app/",
-        tags: ["VanillasJs"],
-    },
-    {
         title: "Todo Manager",
         description:
             "Aplikácia umožňuje používateľovi vytvárať si zoznam úloh, ktoré má na pláne. Tieto úlohy môže používateľ následne mazať, upravovať, alebo označiť ako splnené. Úlohy sa zoskupujú do tzv. projektov.",
@@ -55,41 +37,12 @@ export default [
         tags: ["Typescript"],
     },
     {
-        title: "Tic Tac Toe",
-        description:
-            "Aplikácia predstavuje hru piškvorky. Používatelia si môžu pred začatím hry zadať svoje meno a vybrať si znak, ktorý bude reprezentovať ich ťah na hracom poli.",
-        img: "./projects-images/tic-tac-toe.png",
-        repository: "https://github.com/heno-s/odin-tic-tac-toe",
-        live: "https://heno-s.github.io/odin-tic-tac-toe/",
-        tags: ["VanillaJs"],
-    },
-    {
-        title: "Library",
-        description:
-            "Predstavuje zoznam kníh, ktoré má používateľ buď v pláne prečítať, alebo už prečítal. Používateľ môže vkladať do aplikácie údaje o knihe a poznačiť, či je kniha prečítaná alebo nie.",
-        img: "./projects-images/library.png",
-        repository: "https://github.com/heno-s/revisioned-library",
-        live: "https://heno-s.github.io/revisioned-library/",
-        tags: ["ReactJs"],
-    },
-    {
         title: "Etch a Sketch",
         description:
             "V aplikácii je hlavným cieľom vymaľovať políčka podľa vlastných predstáv a vytvoriť tak nejaký obraz. v aplikácii sa dajú meniť farby, gumovať alebo zmeniť množstvo štvorčekov na ploche.",
         img: "./projects-images/etch-a-sketch.png",
         repository: "https://github.com/heno-s/odin-etch-a-sketch",
         live: "https://heno-s.github.io/odin-etch-a-sketch/",
-        tags: ["VanillaJs"],
-    },
-
-    {
-        title: "Rock, Paper, Scissors",
-        description:
-            "Je imitácia hry kameň papier nožnice, kde používateľ hrá proti počítaču. Hrá sa na 5 kôl. Kto prvý získa 5 výherných bodov stáva sa celkovým víťazom hry.",
-        img: "./projects-images/rps.png",
-        repository:
-            "https://github.com/heno-s/odin-rock-paper-scissors",
-        live: "https://heno-s.github.io/odin-rock-paper-scissors/",
         tags: ["VanillaJs"],
     },
 ];
